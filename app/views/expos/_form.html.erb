@@ -1,0 +1,25 @@
+<%= form_for(@expo) do |f| %>
+  <% if @expo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@expo.errors.count, "error") %> prohibited this expo from being saved:</h2>
+
+      <ul>
+      <% @expo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :background_color %><br />
+    <%= f.text_field :background_color %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

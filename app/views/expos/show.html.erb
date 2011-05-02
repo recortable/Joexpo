@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @expo.name %>
+</p>
+
+<p>
+  <b>Background color:</b>
+  <%= @expo.background_color %>
+</p>
+
+
+<%= link_to 'Edit', edit_expo_path(@expo) %> |
+<%= link_to 'Back', expos_path %>

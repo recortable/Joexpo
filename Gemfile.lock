@@ -100,6 +100,7 @@ GEM
       rspec (>= 1.2.0)
     rest-client (1.6.1)
       mime-types (>= 1.16)
+    rest-open-uri (1.0.0)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
@@ -144,6 +145,7 @@ DEPENDENCIES
   rails3-generators
   rails_best_practices
   remarkable_activerecord
+  rest-open-uri
   simple_form
   sqlite3-ruby
   taps
